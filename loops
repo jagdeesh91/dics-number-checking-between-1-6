@@ -1,0 +1,8 @@
+#!/bin/bash
+
+file="/mnt/c/Users/jagde/OneDrive/Desktop/my project/coder/Country.csv"
+tail -n +2 "$file" | while IFS="," read -r country
+do
+	echo "country name is $country"
+done <"$file"
+ 

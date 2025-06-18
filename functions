@@ -1,0 +1,11 @@
+#!/bin/bash
+function add {
+count=1
+while (( $count <= 10 ))
+do 
+	result=$(( $count * $1 ))
+	echo "result is $result"
+let count++
+done
+}
+add 5

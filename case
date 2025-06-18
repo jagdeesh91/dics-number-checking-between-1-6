@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Get the current day in short format like Mon, Tue, etc.
+weekday=$(date +%a)
+
+case $weekday in
+  Mon)
+    echo "Today is Monday - Start of the work week!"
+    ;;
+  Tue)
+    echo "Today is Tuesday - Keep going!"
+    ;;
+  Wed)
+    echo "Today is Wednesday - Midweek already!"
+    ;;
+  Thu)
+    echo "Today is Thursday - Almost there!"
+    ;;
+  Fri)
+    echo "Today is Friday - Last working day!"
+    ;;
+  Sat)
+    echo "Today is Saturday - Weekend begins!"
+    ;;
+  Sun)
+    echo "Today is Sunday - Time to relax!"
+    ;;
+  *)
+    echo "Unknown day"
+    ;;
+esac
+

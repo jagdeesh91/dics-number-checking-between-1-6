@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "hello"
+a="jagdeesh"
+b="jagdish"
+if [[ $a = $b ]]
+then
+	echo "equal"
+elif [[ $a ]]
+then
+         echo "not equal"
+
+elif [[ -z $a ]]
+then
+	echo "true"
+
+fi	
